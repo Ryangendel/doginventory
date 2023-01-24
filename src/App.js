@@ -69,8 +69,22 @@ function Home() {
   console.log(dogInventory)
   console.log("--------")
 
+  function sayMessage(e){
+    console.log("--------")
+    console.log(e.currentTarget.className)
+    console.log(e.pageY)
+    console.log(e.pageX)
+    
+    if(e.currentTarget.className=="homepage"){
+
+    }
+    console.log("--------")
+    console.log("in Message Function")
+  }
+  //document.getElementById("home").onHover="home screen;" 
   return (
-    <div className="home">
+    <div className="homepage" id="home" value="bulldog" onMouseOver={function (e){sayMessage(e)}} >
+      {/* <div className="home" id="home" onMouseOver={(e)=>{sayMessage(e)}} > */}
       <h1>HOME PAGE</h1>
     </div>
   );

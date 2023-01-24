@@ -13,6 +13,22 @@
   }
 }
 
+/* .home:hover{
+  background:skyblue;
+  color:darkblue
+} */
+
+.home:hover:after {
+  position: absolute;
+  content: "helllo from Ryan";
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
