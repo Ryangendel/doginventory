@@ -3,7 +3,7 @@ import React, {useState, useContext} from "react"
 export const ShelterContext = React.createContext()
 
 export const useShelterContext = ()=> useContext(ShelterContext) 
-
+console.log("helllo")
 export default function ShelterProvider({children}){
     const [dogInventory, setDogInventory]= useState([{userid:1234, name:"Runa", balance:2},{userid:5678, name:"skadi", age:3, breed:"Bulldog"}])
     
